@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\examples\\lite\\examples\\style_transfer\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
+            "outputFile": "C:\\Users\\Zen\\AndroidStudioProjects\\TFLiteStyleTransferDemoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\iou10\\.gradle\\caches\\transforms-3\\7581b7c79f58d4ab523c3799b8a28d3b\\transformed\\appcompat-1.1.0-rc01\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\Zen\\.gradle\\caches\\transforms-3\\7581b7c79f58d4ab523c3799b8a28d3b\\transformed\\appcompat-1.1.0-rc01\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

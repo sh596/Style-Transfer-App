@@ -741,6 +741,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black600
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -883,6 +884,8 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red100
+color red200
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1332,7 +1335,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_appple_pi_logo
+drawable ic_autorenew
 drawable ic_calendar_black_24dp
+drawable ic_camera_alt
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
@@ -1446,7 +1452,6 @@ id beginning
 id blocking
 id bottom
 id bottom_sheet
-id bottom_sheet_arrow
 id buttonPanel
 id cancel_button
 id capture_button
@@ -1458,7 +1463,6 @@ id checkbox
 id checked
 id chip
 id chip_group
-id choose_style_text_view
 id chronometer
 id clear_text
 id clip_horizontal

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\examples\\lite\\examples\\style_transfer\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+            "outputFile": "C:\\Users\\Zen\\AndroidStudioProjects\\TFLiteStyleTransferDemoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\iou10\\.gradle\\caches\\transforms-3\\16123cbe6e616f1a8ed402ec4cf3a2a4\\transformed\\material-1.1.0-alpha08\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\Zen\\.gradle\\caches\\transforms-3\\16123cbe6e616f1a8ed402ec4cf3a2a4\\transformed\\material-1.1.0-alpha08\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -277,18 +277,12 @@ class CameraFragment : Fragment() {
     // Perform I/O heavy operations in a different scope
     fragmentScope.launch(Dispatchers.IO) {
       internalTakePicture().use { result ->
-        Log.d(TAG, "Result received: $result")
-
-        // Save the result to disk
         val output = saveResult(result)
-        Log.d(TAG, "Image saved: ${output.absolutePath}")
 
-        // If the result is a JPEG file, update EXIF metadata with orientation info
         if (output.extension == "jpg") {
           ImageUtils.setExifOrientation(output.absolutePath, result.orientation.toString())
         }
 
-        // Display the photo taken to user
         fragmentScope.launch(Dispatchers.Main) {
           callback.onCaptureFinished(output)
           Log.d(TAG, "almost viewing a picture")
@@ -297,17 +291,10 @@ class CameraFragment : Fragment() {
     }
   }
 
-  /**
-   * Helper function used to capture a still image using the [CameraDevice.TEMPLATE_STILL_CAPTURE]
-   * template. It performs synchronization between the [CaptureResult] and the [Image] resulting
-   * from the single capture, and outputs a [CombinedCaptureResult] object.
-   */
   private suspend fun internalTakePicture(): CombinedCaptureResult = suspendCoroutine { cont ->
 
-    // Flush any images left in the image reader
     @Suppress("ControlFlowWithEmptyBody") while (imageReader.acquireNextImage() != null) {}
 
-    // Start a new image queue
     val imageQueue = ArrayBlockingQueue<Image>(IMAGE_BUFFER_SIZE)
     imageReader.setOnImageAvailableListener(
       { reader ->
@@ -318,8 +305,7 @@ class CameraFragment : Fragment() {
       imageReaderHandler
     )
 
-    val captureRequest =
-      session.device.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE).apply {
+    val captureRequest = session.device.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE).apply {
         addTarget(imageReader.surface)
       }
     session.capture(
@@ -395,8 +381,6 @@ class CameraFragment : Fragment() {
           cont.resumeWithException(exc)
         }
       }
-
-      // No other formats are supported by this sample
       else -> {
         val exc = RuntimeException("Unknown image format: ${result.image.format}")
         Log.e(TAG, exc.message, exc)

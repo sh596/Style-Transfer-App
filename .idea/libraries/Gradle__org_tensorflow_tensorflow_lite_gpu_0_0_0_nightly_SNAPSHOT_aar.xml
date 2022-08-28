@@ -7,6 +7,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e9e56809f74efd93d6738986ab2958d0/transformed/jetified-tensorflow-lite-gpu-0.0.0-nightly-SNAPSHOT/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9e56809f74efd93d6738986ab2958d0/transformed/jetified-tensorflow-lite-gpu-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9e56809f74efd93d6738986ab2958d0/transformed/jetified-tensorflow-lite-gpu-0.0.0-nightly-SNAPSHOT/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/afcefa01a71f0d1ea90df7445ce82366/transformed/jetified-tensorflow-lite-gpu-0.0.0-nightly-SNAPSHOT/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/afcefa01a71f0d1ea90df7445ce82366/transformed/jetified-tensorflow-lite-gpu-0.0.0-nightly-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/afcefa01a71f0d1ea90df7445ce82366/transformed/jetified-tensorflow-lite-gpu-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
